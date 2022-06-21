@@ -5,8 +5,12 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Rótula - Indumentaria masculina</title>
 	<link rel="icon"  href="assets/img/favicon.ico"> 	
-	<link rel="stylesheet" href="css/style.css">
-	<link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@300&display=swap" rel="stylesheet">
+ <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+    <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@300&display=swap" rel="stylesheet">
+		<link rel="stylesheet" href="css/style.css">
+
 </head>
 
 <body class="Grilla">
@@ -18,48 +22,90 @@
 					</article>
 
 					<article>
-					<a href="https://www.whatsapp.com/catalog/5491132066150/" target="_blank"class="encabezado__box--white">Pedidos al 11 3206-6150</a>
+					<a href="https://www.whatsapp.com/catalog/5491132066150/" target="_blank" class="encabezado__box--white">Pedidos al 11 3206-6150</a>
 					</article>
 			 </section>	
-	
-	<nav class="nav">
-		<section>
-			<article class="logo-rotula">
-			<a href="index.html"><h1>RÓTULA</h1></a>
-			</article>		
-		</section>
-			<article >
-				<ul>
-					<li >
-						<a href="index.html"class="font--bold" >Inicio</a>
-					</li>
-					<li>
-						<a href="pages/nosotros.html"class="font--bold">Nosotros</a>
-					</li>
-					<li>
-						<a href="pages/locales.html"class="font--bold">Locales</a>
-					</li>
-					<li>
-						<a href="pages/franquicias.html"class="font--bold">Franquicias</a>
-					</li>
-					<li>
-						<a href="pages/compra_mayorista.html"class="font--bold">Compra Mayorista</a>
-					</li>
-					<li>
-						<a href="pages/contacto.html"class="font--bold">Contacto</a>
-					</li>
-				</ul>
-			</article>
-		</section>
-	</nav>
 
-	<header class="header"> 
-		<img src="assets/img/Imagen header.jpg" alt="Imagen de inicio de Rótula" class="encabezado__img--fluid">
-	</header>
-	<main>
+			<!-- INICIA NAVBAR-->
+
+	<nav class="navbar navbar-expand-lg navbar-dark bg-black">
+  	<div class="container-fluid">
+    <a class=" logo_rotula " href="index.html">RÓTULA</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+        <li class="nav-item">  
+          <a class="nav-link active" aria-current="page" href="index.html">Inicio</a>
+        </li>
+        <li class="nav-item">  
+          <a class="nav-link active" aria-current="page" href="pages/nosotros.html">Nosotros</a>
+        </li>
+        <li class="nav-item">  
+          <a class="nav-link active" aria-current="page" href="pages/locales.html">Locales</a>
+        </li>
+        <li class="nav-item">  
+          <a class="nav-link active" aria-current="page" href="pages/franquicias.html">Franquicias</a>
+        </li>
+        <li class="nav-item">  
+          <a class="nav-link active" aria-current="page" href="pages/compra_mayorista.html">Compra Mayorista</a>
+        </li>
+        <li class="nav-item">  
+          <a class="nav-link active" aria-current="page" href="pages/contacto.html">Contacto</a>
+        </li>
+      </ul>
+
+    </div>
+  </div>
+</nav>
+
+	<!-- Fin NAVBAR -->
+
+<header>
+
+	<div id="carouselExampleDark" class="carousel carousel-dark slide" data-bs-ride="carousel">
+	  <div class="carousel-indicators">
+	    <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+	    <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="1" aria-label="Slide 2"></button>
+	    <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="2" aria-label="Slide 3"></button>
+	  </div>
+	  <div class="carousel-inner">
+	    <div class="carousel-item active" data-bs-interval="10000">
+	      <img src="assets/img/jeans.png" class="d-block w-100" alt="...">
+	      <div class="carousel-caption d-none d-md-block">
+	        <h5>JEANS</h5>
+	        <p>Elastizado - Chupin</p>
+	      </div>
+	    </div>
+	    <div class="carousel-item" data-bs-interval="2000">
+	      <img src="assets/img/Zapatillas.jpg" class="d-block w-100" alt="...">
+	      <div class="carousel-caption d-none d-md-block">
+	        <h5>ZAPATILLAS </h5>
+	        <p>Cuero ecológico</p>
+	      </div>
+	    </div>
+	    <div class="carousel-item">
+	      <img src="assets/img/joggins.jpg" class="d-block w-100" alt="...">
+	      <div class="carousel-caption d-none d-md-block">
+	        <h5>JOGGIN</h5>
+	        <p>Premium - Liviano - Algodón rústico</p>
+	      </div>
+	    </div>
+	  </div>
+	  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="prev">
+	    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+	    <span class="visually-hidden">Previous</span>
+	  </button>
+	  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="next">
+	    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+	    <span class="visually-hidden">Next</span>
+	  </button>
+	</div>
+</header>
 
 <!----------------Informacion  ----->
-
+<main>
 		<section class="indice-franquicias">
 			<div class="locales_inicio" >
 				<a href="pages/locales.html"><h2>LOCALES</h2></a>
@@ -129,7 +175,7 @@
 					</div>
 
 					<div >
-						<a href="https://www.facebook.com/rotula.oficial" target="_blank"class="facebook-icono icon icono--facebook> 
+						<a href="https://www.facebook.com/rotula.oficial" target="_blank"class="facebook-icono icon icono--facebook"> 
 						<img src="assets/img/Icono facebook.png" alt="Seguinos en Facebook" class="facebook-icono"></a>
 					</div>
 				</div>
@@ -143,7 +189,7 @@
 				<form action="Newsletter.php" method="post">
 				<legend>Suscribite a nuestro Newsletter</legend>	
 				<label for="Email">Email</label>
-				<input type="Text" name="Email" id="Email" placeholder="tucorreoelectronico@correo.com">
+				<input type="Text" name="Email" id="Email" class="rounded-pill" placeholder="tucorreoelectronico@correo.com">
 				<input type="submit" value="Enviar">
 				</form>
 			</article>
@@ -180,8 +226,9 @@
 			 	<br><br><br>
 			</article>
 		</section>
-
 	</footer>
+<!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
 
 </body>
 </hmtl>

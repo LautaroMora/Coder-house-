@@ -1,13 +1,15 @@
 <!doctype html>
 <hmtl lang="es">
 <head>
-	<meta charset="utf-8">
+	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Rótula - Indumentaria masculina</title>
-	<link rel="shortcut icon" href="../assets/img/favicon.ico">
+	<link rel="icon"  href="../assets/img/favicon.ico"> 	
+ <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+    <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@300&display=swap" rel="stylesheet">
 	<link rel="stylesheet" href="../css/style.css">
-	<link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@300&display=swap" rel="stylesheet">
-</head>
 
 <body>
 		<section class="encabezado__box--white">	
@@ -22,30 +24,41 @@
 			</article>
 		</section>
 	
-	<nav>
-		<a href="../index.html"><h1>RÓTULA</h1></a>
-		<ul>
-			<li>
-				<a href="../index.html" class="font--bold">Inicio</a>
-			</li>
-			<li>
-				<a href="../pages/nosotros.html" class="font--bold">Nosotros</a>
-			</li>
-			<li>
-				<a href="../pages/locales.html" class="font--bold">Locales</a>
-			</li>
-			<li>
-				<a href="../pages/franquicias.html" class="font--bold">Franquicias</a>
-			</li>
-			<li>
-				<a href="../pages/compra_mayorista.html" class="font--bold">Compra Mayorista</a>
-			</li>
-			<li>
-				<a href="../pages/contacto.html" class="font--bold">Contacto</a>
-			</li>
+			<!-- INICIA NAVBAR-->
 
-		</ul>
-	</nav>
+	<nav class="navbar navbar-expand-lg navbar-dark bg-black">
+  	<div class="container-fluid">
+    <a class=" logo_rotula " href="../index.html">RÓTULA</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+        <li class="nav-item">  
+          <a class="nav-link active" aria-current="page" href="../index.html">Inicio</a>
+        </li>
+        <li class="nav-item">  
+          <a class="nav-link active" aria-current="page" href="../pages/nosotros.html">Nosotros</a>
+        </li>
+        <li class="nav-item">  
+          <a class="nav-link active" aria-current="page" href="../pages/locales.html">Locales</a>
+        </li>
+        <li class="nav-item">  
+          <a class="nav-link active" aria-current="page" href="../pages/franquicias.html">Franquicias</a>
+        </li>
+        <li class="nav-item">  
+          <a class="nav-link active" aria-current="page" href="../pages/compra_mayorista.html">Compra Mayorista</a>
+        </li>
+        <li class="nav-item">  
+          <a class="nav-link active" aria-current="page" href="../pages/contacto.html">Contacto</a>
+        </li>
+      </ul>
+
+    </div>
+  </div>
+</nav>
+
+	<!-- Fin NAVBAR -->
 
 	<main>
 		<section>
@@ -76,33 +89,38 @@
 	<br>
 	<br>
 	<br>
-	<footer class="bg.black">
+	<footer class="footer bg.black">
+
+<!----------------Footer - Contacto ----->
+
 		<section class="pie">
 			<article>
-			<h3>Seguinos</h3>
+				<h3>Seguinos</h3>
 			
-		<div  class="seguinos">
-			<div >
-			<a href="https://www.instagram.com/rotulaoficial/" target="_blank"class="icon icon--instagram"> 
-			<img src="../assets/img/Icono instagram.png" alt="Seguinos en Instagram" class="instagram-icono"></a>
-			</div>
+				<div  class="seguinos">
+					<div >
+						<a href="https://www.instagram.com/rotulaoficial/" target="_blank"class="icon icono--instagram"> 
+						<img src="../assets/img/Icono instagram.png" alt="Seguinos en Instagram" class="instagram-icono"></a>
+					</div>
 
-			<div >
-			<a href="https://www.facebook.com/rotula.oficial" target="_blank"class="facebook-icono icon icon--linkedin"> 
-			<img src="../assets/img/Icono facebook.png" alt="Seguinos en Facebook" class="facebook-icono"></a>
-			</div>
-		</div>
+					<div >
+						<a href="https://www.facebook.com/rotula.oficial" target="_blank"class="facebook-icono icon icono--facebook"> 
+						<img src="../assets/img/Icono facebook.png" alt="Seguinos en Facebook" class="facebook-icono"></a>
+					</div>
+				</div>
+
 			</article>
-		
+<!----------------Footer - indice y suscripcion ----->
+
 		<section class="mid-foot">	
 
 			<article class="formulario-newsletter">
-			<form action="Newsletter.php" method="post">
-			<legend>Suscribite a nuestro Newsletter</legend>	
-			<label for="Email">Email</label>
-			<input type="Text" name="Email" id="Email" placeholder="tucorreoelectronico@correo.com">
-			<input type="submit" value="Enviar">
-			</form>
+				<form action="Newsletter.php" method="post">
+				<legend>Suscribite a nuestro Newsletter</legend>	
+				<label for="Email">Email</label>
+				<input type="Text" name="Email" id="Email" class="rounded-pill" placeholder="tucorreoelectronico@correo.com">
+				<input type="submit" value="Enviar">
+				</form>
 			</article>
 
 
@@ -127,10 +145,9 @@
 					<a href="../pages/contacto.html">Contacto</a>
 				</li>
 			</article>
-		
-
-
 		</section>
+<!----------------Footer - Derechos ----->
+
 		<section class="derechos">
 			<article>
 				<br> <br>
@@ -139,5 +156,8 @@
 			</article>
 		</section>
 	</footer>
+<!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+
 </body>
 </hmtl>

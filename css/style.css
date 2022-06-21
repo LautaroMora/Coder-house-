@@ -64,8 +64,10 @@ html{
 	 display: flex;
    justify-content: center;
    display: inline-block;
+   text-decoration: none;
  
 }
+
 
 .wpp-ico {
 	display: inline-flex;
@@ -75,38 +77,38 @@ html{
 	margin: 7.5px;
 	}
 
-
+/*
 nav	{
 	background-color: black;
 	text-align: center;
-	height: 95px;
+	height: auto;
 	width: 100%;
+	list-style: none;		
+	text-decoration: none;
 
+	color: white;
 }
-	nav ul{
-
-		list-style: none;
-
-	}
-
 	nav ul li{
-		display: inline;
-		margin: 10px 10px;
+		display: block;
+	
 		}
 		nav ul li a {	
-			text-decoration: none;
-			font-size: 2.3rem;
-			color: white;
+
 		
 		}
 
-
-.logo-rotula {
-	display: inline-flex;
+*/
+.logo_rotula {
+	color: white;
 	text-decoration: none;
-	margin-top: 4px;
+		font-size: 3.3rem;
+		padding-left: 1rem;
 }
 
+nav{
+
+	font-size: 2rem;
+}
 
 body {
 	background-color: #ECE9E9;
@@ -114,9 +116,7 @@ body {
 
 
 h1 {
-	text-decoration: none;
 	color: white;
-	text-align: center;
 	font-size: 3.8rem;
 	font-family: 'Source Sans Pro', sans-serif;
 
@@ -131,18 +131,24 @@ h1 {
 h2 {
 	color: black;
 	font-size: 2.9rem;
+	text-decoration: none;
 }
 
 h3 {
 	font-size: 2.5rem;
 } 
 
+a {
+	text-decoration: none;
+}
+
+
 main section article a h2{
 	text-align: center;
 }
 
 
-main  p {
+ p {
 
 	font-size: 2rem;
 } 
@@ -247,13 +253,13 @@ width: 49%;
    justify-content: center;
    text-align: center;
    margin: 1.25% 1.25%;
+
 }
 
 .compra_mayor{
-	text-align: center;
 	margin: 2em 2%;
+	text-align: center;
    justify-content: center;
-
 }
 
 .locales-icono {
@@ -454,7 +460,9 @@ nav {
 	display: inline-block;
 	text-align: center;
 	margin: 1.25% 1.25%;
+
 }
+
 
 .stock-icono {
 	 height: 10%;
