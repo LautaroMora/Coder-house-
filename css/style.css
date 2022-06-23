@@ -110,10 +110,6 @@ nav{
 	font-size: 2rem;
 }
 
-body {
-	background-color: #ECE9E9;
-}
-
 
 h1 {
 	color: white;
@@ -267,8 +263,13 @@ width: 49%;
 	 width: 20em;
 }
 .franquicias-icono {
-	 height: 20em;
-	 width: 20em;
+	 height: 140px;
+	 width: 140px;
+	 border-radius: 100%;
+	 outline: solid 3px ;
+	 outline-color: black;
+    outline-offset: 5px;
+    margin: 5px 5px ;
 }
 
 
@@ -420,8 +421,11 @@ nav {
 }
 
 .comunicacion-icono {
-	 height: 10%;
-	 width: 10%;
+	 border-radius: 100%;
+	 outline: solid 3px ;
+	 outline-color: black;
+    outline-offset: 5px;
+    margin: 5px 5px ;
 }
 
 .newsletter{
@@ -435,8 +439,11 @@ nav {
 
 
 .newsletter-icono {
-	 height: 10%;
-	 width: 10%;
+	 border-radius: 100%;
+	 outline: solid 3px ;
+	 outline-color: black;
+    outline-offset: 5px;
+    margin: 5px 5px ;
 }
 
 .consejos{
@@ -449,8 +456,11 @@ nav {
 }
 
 .consejos-icono {
-	 height: 10%;
-	 width: 10%;
+	 border-radius: 100%;
+	 outline: solid 3px ;
+	 outline-color: black;
+    outline-offset: 5px;
+    margin: 5px 5px ;
 }
 
 .stock{
@@ -465,8 +475,12 @@ nav {
 
 
 .stock-icono {
-	 height: 10%;
-	 width: 10%;
+	 border-radius: 80%;
+	 outline: solid 3px ;
+	 outline-color: black;
+    outline-offset: 5px;
+    margin: 5px 5px ;;
+    
 }
 
 
@@ -567,5 +581,76 @@ nav {
 
 
 
+.marketing .col-lg-6 {
+  margin-bottom: 1.5rem;
+  text-align: center;
+
+}
+.marketing h2 {
+  font-weight: 400;
+}
+.marketing .col-lg-6 p {
+  margin-right: .75rem;
+  margin-left: .75rem;
+}
+
+
+
+
+.featurette-divider {
+  margin: 5rem 0; 
+}
+
+.featurette-heading {
+  font-weight: 300;
+  line-height: 1;
+  letter-spacing: -.05rem;
+}
+
+
+
+
+/* RESPONSIVE CSS
+-------------------------------------------------- */
+
+@media (min-width: 40em) {
+  .carousel-caption p {
+    margin-bottom: 1.25rem;
+    font-size: 1.25rem;
+    line-height: 1.4;
+  }
+
+   .featurette{
+  	margin: 2rem 2rem;
+  }
+
+
+  .featurette-heading {
+    font-size: 50px;
+  }
+}
+
+@media (min-width: 62em) {
+  .featurette-heading {
+    margin-top: 7rem;
+  }
+
+  .featurette{
+  	margin: 2rem 2rem;
+  }
+
+
+
+/*  inidice caja  */
+
+
+.font_white {
+	color: white;
+}
+
+
+.padding-index{
+	padding: 0 2rem ;
+}
 
 
