@@ -1,0 +1,92 @@
+
+
+footer {
+	background-color: black;
+	color: white;
+	font-size: 1.8rem;
+	height: auto;
+	     li a{
+		        list-style: none;
+		        text-decoration: none;
+		        font-size: 1.6rem;
+		        color: white;
+		        background-color: black;
+		        text-align: center;
+	             a {
+		            display: inline-flex;
+            }
+        }
+	}
+
+    footer article li a {
+        text-align: center;
+    }
+
+.seguinos {
+
+	display: flex;
+	justify-content: center;
+	flex-direction: row;
+	column-gap: 20px;
+	row-gap: 20px; 
+	margin-top: 20px;
+	margin-bottom: 20px;
+}	
+
+
+footer article li a {
+	text-align: center;
+}
+
+.contenido-foot {
+	text-align: center;
+	font-size: 2rem;
+}
+
+
+.instagram-icono {
+ height:35px;
+ width: 35px;
+
+}
+
+.facebook-icono {
+ height:35px;
+ width: 35px;
+
+}
+
+.formulario-newsletter {
+ display: inline-flex;
+ text-align: left;	
+padding-left: 5%;
+width: 44%;
+}
+
+
+.indice-pie {
+ display: inline-flex;
+ justify-content: right;
+ flex-direction: column;
+ text-align: center;
+list-style: none;
+width: 49%;
+
+}
+
+
+.pie {
+	text-align:center;
+
+
+}
+
+.bg-black {
+	background-color: black;
+}
+
+.derechos{
+	display: inline;
+	text-align: center;
+	
+}

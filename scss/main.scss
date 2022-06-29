@@ -1,0 +1,245 @@
+@import './_footer.scss';
+@import './_nav.scss';
+@import './_index.scss';
+@import './_compra_mayorista.scss';
+@import './_contacto.scss';
+@import './_franquicias.scss';
+@import './_locales.scss';
+@import './_nosotros.scss';
+
+
+
+*{
+	padding: 0;
+	margin: 0;
+	text-decoration: none;
+}
+
+html{
+	font-size: 62.5%;
+}
+
+
+.encabezado {
+   grid-area: encabezado;     
+}
+
+.header {
+   grid-area: header;
+}
+
+.nav {
+   grid-area: nav;
+}
+
+.franquicias_inicio {
+   grid-area: franquicias;     
+}
+
+.locales_inicio{
+	grid-area: locales;
+}
+
+.compra_mayor{
+	grid-area: compra_mayor;
+}
+
+.footer {
+   grid-area: footer;
+}
+
+nav{
+
+	font-size: 2rem;
+}
+
+
+h1 {
+	color: white;
+	font-size: 3.8rem;
+	font-family: 'Source Sans Pro', sans-serif;
+
+}
+
+h2 {
+	color: black;
+	font-size: 2.9rem;
+	text-decoration: none;
+}
+
+h3 {
+	font-size: 2.5rem;
+} 
+
+a {
+	text-decoration: none;
+}
+
+
+main section article a h2{
+	text-align: center;
+}
+
+
+ p {
+
+	font-size: 2rem;
+} 
+
+#Grilla{
+	display: grid;
+	grid-template-columns: 1fr 1fr ;
+	grid-template-rows: repeat(9, auto);
+	grid-template-areas: 	
+	"encabezado encabezado"
+	"header header"
+	"nav nav"
+	"franquicias_inicio locales_inicio"
+	"compra_mayor compra_mayor"
+	"footer footer";
+}
+
+
+
+
+.encabezado__box--white {
+	background-color: white;
+	font-size: 1.8rem;
+	height: auto;
+	width: 100%;
+	text-align: center;
+	color: black;
+	 display: flex;
+   justify-content: center;
+   display: inline-block;
+   text-decoration: none;
+ 
+}
+
+
+.wpp-ico {
+	display: inline-flex;
+	justify-content: center;
+	height: 40px;
+	width: 40px;
+	margin: 7.5px;
+	}
+
+
+/* RESPONSIVE CSS
+-------------------------------------------------- */
+
+@media (min-width: 40em) {
+	.carousel-caption p {
+		margin-bottom: 1.25rem;
+		font-size: 1.25rem;
+		line-height: 1.4;
+	}
+
+	.featurette {
+		margin: 2rem 2rem;
+	}
+
+
+	.featurette-heading {
+		font-size: 50px;
+	}
+}
+
+@media (min-width: 62em) {
+	.featurette-heading {
+		margin-top: 7rem;
+	}
+
+	.featurette {
+		margin: 2rem 2rem;
+	}
+
+}
+
+	/*  inidice caja  */
+
+
+	.font_white {
+		color: white;
+	}
+
+
+	.padding-index {
+		padding: 0 2rem;
+	}
+
+	/* Animaciones  */
+
+
+	.icons {
+		display: flex;
+		column-gap: 25px;
+	}
+
+	.icon {
+		width: 50px;
+		height: 50px;
+		display: inline-flex;
+		align-items: center;
+		justify-content: center;
+		border-radius: 100%;
+		outline: 2px solid #fff;
+		transition-property: ease-in-out;
+		transition-duration: .95s;
+	}
+
+
+	.icono--instagram:hover {
+		background-image: radial-gradient(circle at 30% 107%,
+				#fdf497 0%, #fdf497 5%,
+				#fd5949 45%, #d6249f 60%,
+				#285AEB 90%);
+		outline-color: #a02d76;
+		outline-offset: 4px;
+	}
+
+
+
+	.icono--facebook:hover {
+		background-color: #0077b5;
+		outline-color: #0077b5;
+		outline-offset: 4px;
+	}
+
+
+	.font--bold:hover {
+		font-weight: bold;
+	}
+
+
+
+	.marketing .col-lg-6 {
+		margin-bottom: 1.5rem;
+		text-align: center;
+
+	}
+
+	.marketing h2 {
+		font-weight: 400;
+	}
+
+	.marketing .col-lg-6 p {
+		margin-right: .75rem;
+		margin-left: .75rem;
+	}
+
+
+
+
+	.featurette-divider {
+		margin: 5rem 0;
+	}
+
+	.featurette-heading {
+		font-weight: 300;
+		line-height: 1;
+		letter-spacing: -.05rem;
+	}
+
+

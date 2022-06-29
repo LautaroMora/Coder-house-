@@ -1,656 +1,467 @@
-*{
-	padding: 0;
-	margin: 0;
-	text-decoration: none;
-}
-
-html{
-	font-size: 62.5%;
-}
-
-
-.encabezado {
-   grid-area: encabezado;     
-}
-
-.header {
-   grid-area: header;
-}
-
-.nav {
-   grid-area: nav;
-}
-
-.franquicias_inicio {
-   grid-area: franquicias;     
-}
-
-.locales_inicio{
-	grid-area: locales;
-}
-
-.compra_mayor{
-	grid-area: compra_mayor;
-}
-
-.footer {
-   grid-area: footer;
-}
-
-
-#Grilla{
-	display: grid;
-	grid-template-columns: 1fr 1fr ;
-	grid-template-rows: repeat(9, auto);
-	grid-template-areas: 	
-	"encabezado encabezado"
-	"header header"
-	"nav nav"
-	"franquicias_inicio locales_inicio"
-	"compra_mayor compra_mayor"
-	"footer footer";
-}
-
-
-
-
-.encabezado__box--white {
-	background-color: white;
-	font-size: 1.8rem;
-	height: auto;
-	width: 100%;
-	text-align: center;
-	color: black;
-	 display: flex;
-   justify-content: center;
-   display: inline-block;
-   text-decoration: none;
- 
-}
-
-
-.wpp-ico {
-	display: inline-flex;
-	justify-content: center;
-	height: 40px;
-	width: 40px;
-	margin: 7.5px;
-	}
-
-/*
-nav	{
-	background-color: black;
-	text-align: center;
-	height: auto;
-	width: 100%;
-	list-style: none;		
-	text-decoration: none;
-
-	color: white;
-}
-	nav ul li{
-		display: block;
-	
-		}
-		nav ul li a {	
-
-		
-		}
-
-*/
-.logo_rotula {
-	color: white;
-	text-decoration: none;
-		font-size: 3.3rem;
-		padding-left: 1rem;
-}
-
-nav{
-
-	font-size: 2rem;
-}
-
-
-h1 {
-	color: white;
-	font-size: 3.8rem;
-	font-family: 'Source Sans Pro', sans-serif;
-
-}
- 
-.encabezado__img--fluid {
-	width: 100%;
-}
-
-
-
-h2 {
-	color: black;
-	font-size: 2.9rem;
-	text-decoration: none;
-}
-
-h3 {
-	font-size: 2.5rem;
-} 
-
-a {
-	text-decoration: none;
-}
-
-
-main section article a h2{
-	text-align: center;
-}
-
-
- p {
-
-	font-size: 2rem;
-} 
-
 footer {
-	background-color: black;
-	color: white;
-	font-size: 1.8rem;
-	height: auto;
-	}
-
-	footer a {
-		display: inline-flex;
-	}
-
-
-	footer li a{
-		list-style: none;
-		text-decoration: none;
-		font-size: 1.6rem;
-		color: white;
-		background-color: black;
-		text-align: center;
-
-	}
-
-
-
-.seguinos {
-
-	display: flex;
-	justify-content: center;
-	flex-direction: row;
-	column-gap: 20px;
-	row-gap: 20px; 
-	margin-top: 20px;
-	margin-bottom: 20px;
-}	
-
+  background-color: black;
+  color: white;
+  font-size: 1.8rem;
+  height: auto;
+}
+footer li a {
+  list-style: none;
+  text-decoration: none;
+  font-size: 1.6rem;
+  color: white;
+  background-color: black;
+  text-align: center;
+}
+footer li a a {
+  display: inline-flex;
+}
 
 footer article li a {
-	text-align: center;
+  text-align: center;
+}
+
+.seguinos {
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  column-gap: 20px;
+  row-gap: 20px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+footer article li a {
+  text-align: center;
 }
 
 .contenido-foot {
-	text-align: center;
-	font-size: 2rem;
+  text-align: center;
+  font-size: 2rem;
 }
 
-
 .instagram-icono {
- height:35px;
- width: 35px;
-
+  height: 35px;
+  width: 35px;
 }
 
 .facebook-icono {
- height:35px;
- width: 35px;
-
+  height: 35px;
+  width: 35px;
 }
 
 .formulario-newsletter {
- display: inline-flex;
- text-align: left;	
-padding-left: 5%;
-width: 44%;
+  display: inline-flex;
+  text-align: left;
+  padding-left: 5%;
+  width: 44%;
 }
-
 
 .indice-pie {
- display: inline-flex;
- justify-content: right;
- flex-direction: column;
- text-align: center;
-list-style: none;
-width: 49%;
-
+  display: inline-flex;
+  justify-content: right;
+  flex-direction: column;
+  text-align: center;
+  list-style: none;
+  width: 49%;
 }
 
-
 .pie {
-	text-align:center;
-
-
+  text-align: center;
 }
 
 .bg-black {
-	background-color: black;
+  background-color: black;
 }
 
-.derechos{
-	display: inline;
-	text-align: center;
-	
+.derechos {
+  display: inline;
+  text-align: center;
 }
 
-/* INICIO PAGINA INDICE */
-
-.indice-franquicias{
-   display: flex;
-   justify-content: center;
-   text-align: center;
-   margin: 1.25% 1.25%;
-
+nav {
+  font-size: 2rem;
 }
 
-.compra_mayor{
-	margin: 2em 2%;
-	text-align: center;
-   justify-content: center;
+.logo_rotula {
+  color: white;
+  text-decoration: none;
+  font-size: 3.3rem;
+  padding-left: 1rem;
+}
+
+.indice-franquicias {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  margin: 1.25% 1.25%;
+}
+
+.compra_mayor {
+  margin: 2em 2%;
+  text-align: center;
+  justify-content: center;
 }
 
 .locales-icono {
-	 height:20em;
-	 width: 20em;
+  height: 20em;
+  width: 20em;
 }
+
 .franquicias-icono {
-	 height: 140px;
-	 width: 140px;
-	 border-radius: 100%;
-	 outline: solid 3px ;
-	 outline-color: black;
-    outline-offset: 5px;
-    margin: 5px 5px ;
+  height: 140px;
+  width: 140px;
+  border-radius: 100%;
+  outline: solid 3px;
+  outline-color: black;
+  outline-offset: 5px;
+  margin: 5px 5px;
 }
 
-
- /*FIN PAGINA INDICE*/
-
-
-
-/* INICIO PAGINA NOSOTROS */
-
-.nosotros_titulo{
-	text-align: center;
-	margin: 1em ;
-
+.font_white {
+  color: white;
 }
 
-.nosotros{
-	margin: 0 2%;
-	width: auto;
-	text-align: center;
-}
-/* FIN PAGINA NOSOTROS */
-
-
-/* INICIO PAGINA LOCALES */
-
-
-
-
-section#encabezado {
-   grid-area: encabezado;     
+.padding-index {
+  padding: 0 2rem;
 }
 
-
-nav {
-   grid-area: nav;
+.titulo_compra_mayor {
+  text-align: center;
+  padding: 1em 0;
 }
 
-.franquicias_inicio {
-   grid-area: franquicias;     
+.presentacion_compra_mayor {
+  height: auto;
+  text-align: center;
+  margin: 0 2%;
 }
 
-.locales.inicio{
-	grid-area: locales;
+.contacto_titulo {
+  text-align: center;
+  padding: 1em;
 }
 
-.locales{
-	grid-area: locales;
+.formulario-contacto {
+  text-align: center;
+  font-size: 2em;
+  height: auto;
+  width: 25%;
+  margin: 2em 37.5% 0 37.5%;
 }
 
-.rotula_flores{
-	grid-area: rotula_flores;
-}
-.rotula_formosa{
-	grid-area: rotula_formosa;
-}
-.pie {
-   grid-area: footer;
-}
-
-#Grillalocales{
-	display: grid;
-	grid-template-areas: 	
-	"encabezado encabezado"
-	"nav nav"
-	"locales locales"
-	"rotula_flores rotula_formosa"
-	"footer footer";
-}
-
-@media screen and (min-width: 360px) {
-	#grilla {
-            grid-template-columns:  1fr 1fr;
-    			grid-template-rows: repeat(6fr);
-    				grid-template-areas: 	
-	"encabezado encabezado"
-	"nav nav "
-	"locales locales"
-	"rotula_flores rotula_flores"
-	"rotula_formosa rotula_formosa"
-	"footer footer";
-}
-}
-
-.locales_titulo{
-	text-align: center;
-	margin: 1em ;
-
-}
-
-.locales{
-	margin: 0 2%;
-	width: auto;
-	text-align: center;
-}
-
-.locales_rotula{
-	display: inline-block;
-	margin: 2em 0 ;
-
-}
-
-.icono_instagram_locales {
-	 height: 13%;
-	 width: 13%;
-}
-
-.icono_facbook_locales{
-	 height: 13%;
-	 width: 13%;
-
-}
-.rotula_flores{
-	display: inline-block;
-	text-align: center;
-	margin: 1.25% 1.25%;
-	width: 47%;
-}
-
-.rotula_formosa{
-	display: inline-block;
-	text-align: center;
-	margin: 1.25% 1.25%;
-	width: 47%;
-}
-
-/*  FIN PAGINA LOCALES */
-
-
-/*INICIO PAGINA FRANQUICIAS*/
 .franquicias_titulo {
-	text-align: center;
-	padding: 1em 0 ;
+  text-align: center;
+  padding: 1em 0;
 }
 
-.presentacion_franquicias	{
-	height: auto;
-	text-align: center;
-	margin:0 2%;
+.presentacion_franquicias {
+  height: auto;
+  text-align: center;
+  margin: 0 2%;
 }
 
-
-.comunicacion{
-	width: 47%;
-	height: auto;
-	color: black;
-	display: inline-block;
-	text-align: center;
-	margin: 1.25% 1.25%;
+.comunicacion {
+  width: 47%;
+  height: auto;
+  color: black;
+  display: inline-block;
+  text-align: center;
+  margin: 1.25% 1.25%;
 }
 
 .comunicacion-icono {
-	 border-radius: 100%;
-	 outline: solid 3px ;
-	 outline-color: black;
-    outline-offset: 5px;
-    margin: 5px 5px ;
+  border-radius: 100%;
+  outline: solid 3px;
+  outline-color: black;
+  outline-offset: 5px;
+  margin: 5px 5px;
 }
 
-.newsletter{
-	width: 47%;
-	height: auto;
-	color: black;
-	display: inline-block;
-	text-align: center;
-	margin: 1.25% 1.25%;
+.newsletter {
+  width: 47%;
+  height: auto;
+  color: black;
+  display: inline-block;
+  text-align: center;
+  margin: 1.25% 1.25%;
 }
-
 
 .newsletter-icono {
-	 border-radius: 100%;
-	 outline: solid 3px ;
-	 outline-color: black;
-    outline-offset: 5px;
-    margin: 5px 5px ;
+  border-radius: 100%;
+  outline: solid 3px;
+  outline-color: black;
+  outline-offset: 5px;
+  margin: 5px 5px;
 }
 
-.consejos{
-	width: 47%;
-	height: auto;
-	color: black;
-	display: inline-block;
-	text-align: center;
-	margin: 1.25% 1.25%;
+.consejos {
+  width: 47%;
+  height: auto;
+  color: black;
+  display: inline-block;
+  text-align: center;
+  margin: 1.25% 1.25%;
 }
 
 .consejos-icono {
-	 border-radius: 100%;
-	 outline: solid 3px ;
-	 outline-color: black;
-    outline-offset: 5px;
-    margin: 5px 5px ;
+  border-radius: 100%;
+  outline: solid 3px;
+  outline-color: black;
+  outline-offset: 5px;
+  margin: 5px 5px;
 }
 
-.stock{
-	width: 47%;
-	height: auto;
-	color: black;
-	display: inline-block;
-	text-align: center;
-	margin: 1.25% 1.25%;
-
+.stock {
+  width: 47%;
+  height: auto;
+  color: black;
+  display: inline-block;
+  text-align: center;
+  margin: 1.25% 1.25%;
 }
-
 
 .stock-icono {
-	 border-radius: 80%;
-	 outline: solid 3px ;
-	 outline-color: black;
-    outline-offset: 5px;
-    margin: 5px 5px ;;
-    
+  border-radius: 80%;
+  outline: solid 3px;
+  outline-color: black;
+  outline-offset: 5px;
+  margin: 5px 5px;
 }
-
 
 .formulario-informacion {
-	text-align: center;
-	font-size: 2em;
-	height: auto;
-	width: 25%;
-	margin: 5em 37.5% 0 37.5% ;
-
-	}
-
-/*  FIN PAGINA FRANQUICIAS*/
-
-
-
-/* INICIO PAGINA COMPRA MAYORISTA*/
-
-.titulo_compra_mayor {
-	text-align: center;
-	padding: 1em 0 ;
-}
-
-.presentacion_compra_mayor	{
-	height: auto;
-	text-align: center;
-	margin: 0 2%;
-}
-
-
-/* FIN COMPRA MAYORISTA*/
-
-
-
-/* INICIO PAGINA CONTACTO */
-
-.contacto_titulo {
-	text-align: center;
-	padding: 1em ;
-}
-
-
-.formulario-contacto{
-	text-align: center;
-	font-size: 2em;
-	height: auto;
-	width: 25%;
-	margin: 2em 37.5% 0 37.5% ;
-
-	}
-
-
-/* FIN PAGINA CONTACTO */
-
-
-/* Animaciones  */
-
-
-.icons {
-    display: flex;
-    column-gap: 25px;
-}
-
-.icon {
-    width: 50px;
-    height: 50px;
-    display: inline-flex;
-    align-items: center;
-    justify-content: center;
-    border-radius:100%;
-    outline: 2px solid #fff;
-    transition-property:ease-in-out;
-    transition-duration: .95s;
-}
-
-
-.icono--instagram:hover {
-    background-image: radial-gradient(circle at 30% 107%,
-            #fdf497 0%, #fdf497 5%,
-            #fd5949 45%, #d6249f 60%,
-            #285AEB 90%);
-    outline-color: #a02d76;
-    outline-offset: 4px;
-}
-
-
-
-.icono--facebook:hover {
-    background-color: #0077b5;
-    outline-color: #0077b5;
-    outline-offset: 4px;
-}
-
-
-.font--bold:hover {
-	font-weight: bold;
-}
-
-
-
-.marketing .col-lg-6 {
-  margin-bottom: 1.5rem;
   text-align: center;
-
-}
-.marketing h2 {
-  font-weight: 400;
-}
-.marketing .col-lg-6 p {
-  margin-right: .75rem;
-  margin-left: .75rem;
+  font-size: 2em;
+  height: auto;
+  width: 25%;
+  margin: 5em 37.5% 0 37.5%;
 }
 
-
-
-
-.featurette-divider {
-  margin: 5rem 0; 
+.locales_titulo {
+  text-align: center;
+  margin: 1em;
 }
 
-.featurette-heading {
-  font-weight: 300;
-  line-height: 1;
-  letter-spacing: -.05rem;
+.locales {
+  margin: 0 2%;
+  width: auto;
+  text-align: center;
 }
 
+.locales_rotula {
+  display: inline-block;
+  margin: 2em 0;
+}
 
+.icono_instagram_locales {
+  height: 13%;
+  width: 13%;
+}
 
+.icono_facbook_locales {
+  height: 13%;
+  width: 13%;
+}
+
+.rotula_flores {
+  display: inline-block;
+  text-align: center;
+  margin: 1.25% 1.25%;
+  width: 47%;
+}
+
+.rotula_formosa {
+  display: inline-block;
+  text-align: center;
+  margin: 1.25% 1.25%;
+  width: 47%;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  text-decoration: none;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+.encabezado {
+  grid-area: encabezado;
+}
+
+.header {
+  grid-area: header;
+}
+
+.nav {
+  grid-area: nav;
+}
+
+.franquicias_inicio {
+  grid-area: franquicias;
+}
+
+.locales_inicio {
+  grid-area: locales;
+}
+
+.compra_mayor {
+  grid-area: compra_mayor;
+}
+
+.footer {
+  grid-area: footer;
+}
+
+nav {
+  font-size: 2rem;
+}
+
+h1 {
+  color: white;
+  font-size: 3.8rem;
+  font-family: "Source Sans Pro", sans-serif;
+}
+
+h2 {
+  color: black;
+  font-size: 2.9rem;
+  text-decoration: none;
+}
+
+h3 {
+  font-size: 2.5rem;
+}
+
+a {
+  text-decoration: none;
+}
+
+main section article a h2 {
+  text-align: center;
+}
+
+p {
+  font-size: 2rem;
+}
+
+#Grilla {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: repeat(9, auto);
+  grid-template-areas: "encabezado encabezado" "header header" "nav nav" "franquicias_inicio locales_inicio" "compra_mayor compra_mayor" "footer footer";
+}
+
+.encabezado__box--white {
+  background-color: white;
+  font-size: 1.8rem;
+  height: auto;
+  width: 100%;
+  text-align: center;
+  color: black;
+  display: flex;
+  justify-content: center;
+  display: inline-block;
+  text-decoration: none;
+}
+
+.wpp-ico {
+  display: inline-flex;
+  justify-content: center;
+  height: 40px;
+  width: 40px;
+  margin: 7.5px;
+}
 
 /* RESPONSIVE CSS
 -------------------------------------------------- */
-
 @media (min-width: 40em) {
   .carousel-caption p {
     margin-bottom: 1.25rem;
     font-size: 1.25rem;
     line-height: 1.4;
   }
-
-   .featurette{
-  	margin: 2rem 2rem;
+  .featurette {
+    margin: 2rem 2rem;
   }
-
-
   .featurette-heading {
     font-size: 50px;
   }
 }
-
 @media (min-width: 62em) {
   .featurette-heading {
     margin-top: 7rem;
   }
-
-  .featurette{
-  	margin: 2rem 2rem;
+  .featurette {
+    margin: 2rem 2rem;
   }
-
-
-
+}
 /*  inidice caja  */
-
-
 .font_white {
-	color: white;
+  color: white;
 }
 
-
-.padding-index{
-	padding: 0 2rem ;
+.padding-index {
+  padding: 0 2rem;
 }
 
+/* Animaciones  */
+.icons {
+  display: flex;
+  column-gap: 25px;
+}
 
+.icon {
+  width: 50px;
+  height: 50px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 100%;
+  outline: 2px solid #fff;
+  transition-property: ease-in-out;
+  transition-duration: 0.95s;
+}
+
+.icono--instagram:hover {
+  background-image: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%);
+  outline-color: #a02d76;
+  outline-offset: 4px;
+}
+
+.icono--facebook:hover {
+  background-color: #0077b5;
+  outline-color: #0077b5;
+  outline-offset: 4px;
+}
+
+.font--bold:hover {
+  font-weight: bold;
+}
+
+.marketing .col-lg-6 {
+  margin-bottom: 1.5rem;
+  text-align: center;
+}
+
+.marketing h2 {
+  font-weight: 400;
+}
+
+.marketing .col-lg-6 p {
+  margin-right: 0.75rem;
+  margin-left: 0.75rem;
+}
+
+.featurette-divider {
+  margin: 5rem 0;
+}
+
+.featurette-heading {
+  font-weight: 300;
+  line-height: 1;
+  letter-spacing: -0.05rem;
+}
+
+/*# sourceMappingURL=style.css.map */

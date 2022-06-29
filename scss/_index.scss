@@ -1,0 +1,38 @@
+.indice-franquicias {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    margin: 1.25% 1.25%;
+
+}
+
+.compra_mayor {
+    margin: 2em 2%;
+    text-align: center;
+    justify-content: center;
+}
+
+.locales-icono {
+    height: 20em;
+    width: 20em;
+}
+
+.franquicias-icono {
+    height: 140px;
+    width: 140px;
+    border-radius: 100%;
+    outline: solid 3px;
+    outline-color: black;
+    outline-offset: 5px;
+    margin: 5px 5px;
+}
+
+
+.font_white {
+	color: white;
+}
+
+
+.padding-index{
+	padding: 0 2rem ;
+}
