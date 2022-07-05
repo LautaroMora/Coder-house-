@@ -16,10 +16,6 @@ footer li a a {
   display: inline-flex;
 }
 
-footer article li a {
-  text-align: center;
-}
-
 .seguinos {
   display: flex;
   justify-content: center;
@@ -40,13 +36,13 @@ footer article li a {
 }
 
 .instagram-icono {
-  height: 35px;
   width: 35px;
+  height: 35px;
 }
 
 .facebook-icono {
-  height: 35px;
   width: 35px;
+  height: 35px;
 }
 
 .formulario-newsletter {
@@ -103,13 +99,13 @@ nav {
 }
 
 .locales-icono {
-  height: 20em;
   width: 20em;
+  height: 20em;
 }
 
 .franquicias-icono {
-  height: 140px;
   width: 140px;
+  height: 140px;
   border-radius: 100%;
   outline: solid 3px;
   outline-color: black;
@@ -149,15 +145,14 @@ nav {
   margin: 2em 37.5% 0 37.5%;
 }
 
-.franquicias_titulo {
+.franquicias_titulo, .presentacion_franquicias {
   text-align: center;
-  padding: 1em 0;
+  margin: 1em 2em;
 }
 
 .presentacion_franquicias {
   height: auto;
   text-align: center;
-  margin: 0 2%;
 }
 
 .comunicacion {

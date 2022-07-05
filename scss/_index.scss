@@ -6,6 +6,12 @@
 
 }
 
+@mixin sizes ($width,$height){
+	width: $height;
+	height: $height;
+	
+}
+
 .compra_mayor {
     margin: 2em 2%;
     text-align: center;
@@ -13,13 +19,11 @@
 }
 
 .locales-icono {
-    height: 20em;
-    width: 20em;
+    @include sizes(20em,20em);
 }
 
 .franquicias-icono {
-    height: 140px;
-    width: 140px;
+    @include sizes(140px,140px);
     border-radius: 100%;
     outline: solid 3px;
     outline-color: black;

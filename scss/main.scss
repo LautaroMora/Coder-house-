@@ -20,6 +20,19 @@ html{
 }
 
 
+
+
+$colores:(
+	instagram1:#fdf497,
+	instagram2:#fd5949,
+	instagram3:#d6249f,
+	instagram4:#285AEB,
+	instagram5:#a02d76,
+	facebook1: #0077b5,
+
+);
+
+
 .encabezado {
    grid-area: encabezado;     
 }
@@ -192,18 +205,20 @@ main section article a h2{
 
 	.icono--instagram:hover {
 		background-image: radial-gradient(circle at 30% 107%,
-				#fdf497 0%, #fdf497 5%,
-				#fd5949 45%, #d6249f 60%,
-				#285AEB 90%);
-		outline-color: #a02d76;
+				map-get($colores,instagram1) 0%,
+				map-get($colores,instagram1) 5%,
+				map-get($colores,instagram2) 45%,
+				map-get($colores,instagram3) 60%,
+				map-get($colores,instagram4) 90%);
+		outline-color: map-get($colores,instagram5);
 		outline-offset: 4px;
 	}
 
 
 
 	.icono--facebook:hover {
-		background-color: #0077b5;
-		outline-color: #0077b5;
+		background-color:map-get($colores,facebook1);
+		outline-color: map-get($colores,facebook1);
 		outline-offset: 4px;
 	}
 
