@@ -308,33 +308,60 @@ p {
 }
 
 @media (max-width: 1070px) {
-	 a {text-align: center;
-	 }
-	iframe	{height: 50em;
-	width:50em;
-	justify-items: center;
-	display: inline-block;
-}
-
-
-	.locales_rotula{
+	a {
 		text-align: center;
-	
+	}
+
+	iframe {
+		height: 50em;
+		width: 50em;
+		justify-items: center;
+		display: inline-block;
+	}
+
+
+	.locales_rotula {
+		text-align: center;
+
 
 
 	}
-	.rotula_formosa{
-		display:block;
+
+	.rotula_formosa {
+		display: block;
 		align-items: center;
 		width: 100%;
-	
+
 
 	}
 
 	.rotula_flores {
 		display: block;
 		width: 100%;
-	
+
+	}
+
+
+	.formulario-contacto{
+		text-align: center;
+		font-size: 2em;
+		align-items: center;
+		width: 100%;
+		margin-left: 0 ;
+		}
+
+	.formulario-informacion{
+		text-align: center;
+		font-size: 2em;
+		align-items: center;
+		width: 100%;
+		margin-left: 0 ;
+		border: solid 1px;
+		border-radius: 0.7%;
+		}
+
+	input {
+		align-items: center;
 	}
 
 }
@@ -346,24 +373,30 @@ p {
 
 
 
-.errorPagina{
+.errorPagina {
 
 	justify-items: center;
 }
 
-.error{
+.error {
 	font-size: 240px;
 	display: block;
 	color: #839bff;
 	text-align: center;
 }
 
-.imagenError{
+.imagenError {
 	display: block;
-	align-content:flex-end;
+	align-content: flex-end;
 	margin: 0 30%;
 	justify-content: center;
 	align-items: center;
-	
-	
+
 }
+
+form h2 {
+	margin-top: 20px ;
+}
+
+
+

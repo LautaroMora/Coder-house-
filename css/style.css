@@ -535,6 +535,25 @@ p {
     display: block;
     width: 100%;
   }
+  .formulario-contacto {
+    text-align: center;
+    font-size: 2em;
+    align-items: center;
+    width: 100%;
+    margin-left: 0;
+  }
+  .formulario-informacion {
+    text-align: center;
+    font-size: 2em;
+    align-items: center;
+    width: 100%;
+    margin-left: 0;
+    border: solid 1px;
+    border-radius: 0.7%;
+  }
+  input {
+    align-items: center;
+  }
 }
 .logo_rotula:hover {
   color: #fff !important;
@@ -557,6 +576,10 @@ p {
   margin: 0 30%;
   justify-content: center;
   align-items: center;
+}
+
+form h2 {
+  margin-top: 20px;
 }
 
 /*# sourceMappingURL=style.css.map */
