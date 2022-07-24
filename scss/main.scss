@@ -9,20 +9,20 @@
 
 
 
-*{
+* {
 	padding: 0;
 	margin: 0;
 	text-decoration: none;
 }
 
-html{
+html {
 	font-size: 62.5%;
 }
 
 
 
 
-$colores:(
+$colores: (
 	instagram1:#fdf497,
 	instagram2:#fd5949,
 	instagram3:#d6249f,
@@ -34,34 +34,34 @@ $colores:(
 
 
 .encabezado {
-   grid-area: encabezado;     
+	grid-area: encabezado;
 }
 
 .header {
-   grid-area: header;
+	grid-area: header;
 }
 
 .nav {
-   grid-area: nav;
+	grid-area: nav;
 }
 
 .franquicias_inicio {
-   grid-area: franquicias;     
+	grid-area: franquicias;
 }
 
-.locales_inicio{
+.locales_inicio {
 	grid-area: locales;
 }
 
-.compra_mayor{
+.compra_mayor {
 	grid-area: compra_mayor;
 }
 
 .footer {
-   grid-area: footer;
+	grid-area: footer;
 }
 
-nav{
+nav {
 
 	font-size: 2rem;
 }
@@ -82,34 +82,34 @@ h2 {
 
 h3 {
 	font-size: 2.5rem;
-} 
+}
 
 a {
 	text-decoration: none;
 }
 
 
-main section article a h2{
+main section article a h2 {
 	text-align: center;
 }
 
 
- p {
+p {
 
 	font-size: 2rem;
-} 
+}
 
-#Grilla{
+#Grilla {
 	display: grid;
-	grid-template-columns: 1fr 1fr ;
+	grid-template-columns: 1fr 1fr;
 	grid-template-rows: repeat(9, auto);
-	grid-template-areas: 	
-	"encabezado encabezado"
-	"header header"
-	"nav nav"
-	"franquicias_inicio locales_inicio"
-	"compra_mayor compra_mayor"
-	"footer footer";
+	grid-template-areas:
+		"encabezado encabezado"
+		"header header"
+		"nav nav"
+		"franquicias_inicio locales_inicio"
+		"compra_mayor compra_mayor"
+		"footer footer";
 }
 
 
@@ -122,11 +122,11 @@ main section article a h2{
 	width: 100%;
 	text-align: center;
 	color: black;
-	 display: flex;
-   justify-content: center;
-   display: inline-block;
-   text-decoration: none;
- 
+	display: flex;
+	justify-content: center;
+	display: inline-block;
+	text-decoration: none;
+
 }
 
 
@@ -136,7 +136,97 @@ main section article a h2{
 	height: 40px;
 	width: 40px;
 	margin: 7.5px;
-	}
+}
+
+
+
+/*  inidice caja  */
+
+
+.font_white {
+	color: white;
+}
+
+
+.padding-index {
+	padding: 0 2rem;
+}
+
+/* Animaciones  */
+
+
+.icons {
+	display: flex;
+	column-gap: 25px;
+}
+
+.icon {
+	width: 50px;
+	height: 50px;
+	display: inline-flex;
+	align-items: center;
+	justify-content: center;
+	border-radius: 100%;
+	outline: 2px solid #fff;
+	transition-property: ease-in-out;
+	transition-duration: .95s;
+}
+
+
+.icono--instagram:hover {
+	background-image: radial-gradient(circle at 30% 107%,
+			map-get($colores, instagram1) 0%,
+			map-get($colores, instagram1) 5%,
+			map-get($colores, instagram2) 45%,
+			map-get($colores, instagram3) 60%,
+			map-get($colores, instagram4) 90%);
+	outline-color: map-get($colores, instagram5);
+	outline-offset: 4px;
+}
+
+
+
+.icono--facebook:hover {
+	background-color: map-get($colores, facebook1);
+	outline-color: map-get($colores, facebook1);
+	outline-offset: 4px;
+}
+
+
+.font--bold:hover {
+	font-weight: bold;
+}
+
+
+
+.marketing .col-lg-6 {
+	margin-bottom: 1.5rem;
+	text-align: center;
+
+}
+
+.marketing h2 {
+	font-weight: 400;
+}
+
+.marketing .col-lg-6 p {
+	margin-right: .75rem;
+	margin-left: .75rem;
+}
+
+
+
+
+.featurette-divider {
+	margin: 5rem 0;
+}
+
+.featurette-heading {
+	font-weight: 300;
+	line-height: 1;
+	letter-spacing: -.05rem;
+}
+
 
 
 /* RESPONSIVE CSS
@@ -170,91 +260,110 @@ main section article a h2{
 
 }
 
-	/*  inidice caja  */
 
 
-	.font_white {
-		color: white;
-	}
+@media (min-width: 990px) {
 
-
-	.padding-index {
-		padding: 0 2rem;
-	}
-
-	/* Animaciones  */
-
-
-	.icons {
+	.box_rotula {
+		background-color: black;
+		width: 100%;
+		height: auto;
 		display: flex;
-		column-gap: 25px;
-	}
-
-	.icon {
-		width: 50px;
-		height: 50px;
-		display: inline-flex;
-		align-items: center;
-		justify-content: center;
-		border-radius: 100%;
-		outline: 2px solid #fff;
-		transition-property: ease-in-out;
-		transition-duration: .95s;
+		flex-direction: column;
+		position: sticky;
+		top: 0;
+		z-index: 1;
 	}
 
 
-	.icono--instagram:hover {
-		background-image: radial-gradient(circle at 30% 107%,
-				map-get($colores,instagram1) 0%,
-				map-get($colores,instagram1) 5%,
-				map-get($colores,instagram2) 45%,
-				map-get($colores,instagram3) 60%,
-				map-get($colores,instagram4) 90%);
-		outline-color: map-get($colores,instagram5);
-		outline-offset: 4px;
-	}
-
-
-
-	.icono--facebook:hover {
-		background-color:map-get($colores,facebook1);
-		outline-color: map-get($colores,facebook1);
-		outline-offset: 4px;
-	}
-
-
-	.font--bold:hover {
-		font-weight: bold;
-	}
-
-
-
-	.marketing .col-lg-6 {
-		margin-bottom: 1.5rem;
+	.logo_rotula {
+		color: white;
+		text-decoration: none;
+		font-size: 3.3rem;
+		padding-left: 1rem;
 		text-align: center;
-
-	}
-
-	.marketing h2 {
-		font-weight: 400;
-	}
-
-	.marketing .col-lg-6 p {
-		margin-right: .75rem;
-		margin-left: .75rem;
 	}
 
 
 
 
-	.featurette-divider {
-		margin: 5rem 0;
+	.container-fluid {
+		display: flex;
+		flex-direction: column;
+		text-align: center;
+	}
+}
+
+
+.box_rotula {
+	background-color: black;
+	width: 100%;
+	height: auto;
+	display: flex;
+	flex-direction: column;
+	position: sticky;
+	top: 0;
+	z-index: 1;
+	text-align: center;
+}
+
+@media (max-width: 1070px) {
+	 a {text-align: center;
+	 }
+	iframe	{height: 50em;
+	width:50em;
+	justify-items: center;
+	display: inline-block;
+}
+
+
+	.locales_rotula{
+		text-align: center;
+	
+
+
+	}
+	.rotula_formosa{
+		display:block;
+		align-items: center;
+		width: 100%;
+	
+
 	}
 
-	.featurette-heading {
-		font-weight: 300;
-		line-height: 1;
-		letter-spacing: -.05rem;
+	.rotula_flores {
+		display: block;
+		width: 100%;
+	
 	}
 
+}
 
+
+.logo_rotula:hover {
+	color: #fff !important;
+}
+
+
+
+.errorPagina{
+
+	justify-items: center;
+}
+
+.error{
+	font-size: 240px;
+	display: block;
+	color: #839bff;
+	text-align: center;
+}
+
+.imagenError{
+	display: block;
+	align-content:flex-end;
+	margin: 0 30%;
+	justify-content: center;
+	align-items: center;
+	
+	
+}

@@ -6,10 +6,10 @@
 
 }
 
-@mixin sizes ($width,$height){
-	width: $height;
-	height: $height;
-	
+@mixin sizes ($width, $height) {
+    width: $height;
+    height: $height;
+
 }
 
 .compra_mayor {
@@ -19,11 +19,11 @@
 }
 
 .locales-icono {
-    @include sizes(20em,20em);
+    @include sizes(20em, 20em);
 }
 
 .franquicias-icono {
-    @include sizes(140px,140px);
+    @include sizes(140px, 140px);
     border-radius: 100%;
     outline: solid 3px;
     outline-color: black;
@@ -33,10 +33,15 @@
 
 
 .font_white {
-	color: white;
+    color: white;
 }
 
 
-.padding-index{
-	padding: 0 2rem ;
+.padding-index {
+    margin-top: 2em;
+}
+
+.listaFranquicias{
+
+        padding-top: 20px   ;
 }
